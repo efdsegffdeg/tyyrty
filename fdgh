@@ -1,0 +1,5 @@
+local a = game.Workspace.Crates.Crate.Crate
+local b = a.CFrame
+local plr = game.Players.LocalPlayer.Name
+
+game.Workspace[plr].HumanoidRootPart.CFrame = b
