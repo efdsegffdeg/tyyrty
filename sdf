@@ -1,0 +1,25 @@
+function Tycoon(Me)
+   local Tycoons = game:GetService("Workspace")["Legacy's Tycoon Kit"].Tycoons:GetDescendants()
+   for i = 1,#Tycoons do
+       local v = Tycoons[i]
+       if string.find(v.Name,"Owner") and string.find(v.ClassName,"ObjectValue")then
+           if v.Value == game.Players.LocalPlayer then
+               return v.Parent
+           end
+       end
+   end
+end
+while wait() do
+local Get_Tycoon = Tycoon(ME):GetDescendants()
+local plr_root = game.Players.LocalPlayer.Character.HumanoidRootPart
+for i = 1,#Get_Tycoon do  
+   local v = Get_Tycoon[i]
+   if not v.Parent:FindFirstChild("Gamepass") then
+   if string.find(v.Name,"Head") or (v.Name == "Giver") then
+       firetouchinterest(plr_root,v,0)
+       wait()
+       firetouchinterest(plr_root,v,1)
+       end
+   end
+end
+end
