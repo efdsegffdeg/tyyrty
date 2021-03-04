@@ -1,0 +1,1 @@
+local a=require(game:GetService("ReplicatedStorage").Framework.Library)local b=a.GunCmds.DoesOwnGun;local c=a.Network.Fire;a.GunCmds.DoesOwnGun=function()return true end;a.Network.Fire=function(d,e,...)if d=="Request Respawn"and not b(game:GetService("Players").LocalPlayer,e)then return c(d,"1")end;return c(d,e,...)end
