@@ -1,0 +1,19 @@
+_G.xFighter = 0
+_G.Kril = 10000
+_G.Gohan = 20000
+_G.Turtle = 25000
+_G.Raditz = 30000
+_G.Nappa = 40000
+_G.Citizen = 70000
+_G.TopX = 300000
+_G.Vegeta = 750000
+_G.Kaio  = 100000
+_G.Frieza = 2200000
+_G.Cell = 3500000
+_G.SSJ2 = 5000000
+_G.Kaioken = 6500000
+_G.SSJB = 8000000
+_G.Broly = 20000000
+_G.SSJG = 50500000
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/oofobob/Scripts/master/BetterDBUFarm'))()
