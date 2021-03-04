@@ -1,0 +1,1040 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local logingui = Instance.new("Frame")
+local User = Instance.new("TextBox")
+local Pass = Instance.new("TextBox")
+local Submit = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local Frame_2 = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+local Frame_3 = Instance.new("Frame")
+local UIGradient_3 = Instance.new("UIGradient")
+local Frame_4 = Instance.new("Frame")
+local UIGradient_4 = Instance.new("UIGradient")
+local opengui = Instance.new("Frame")
+local Open = Instance.new("TextButton")
+local maingui = Instance.new("ScrollingFrame")
+local Hub = Instance.new("TextLabel")
+local Hub_Roundify_12px = Instance.new("ImageLabel")
+local HatHub = Instance.new("TextButton")
+local Commands = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local ReplicationUI = Instance.new("TextButton")
+local HatFloat = Instance.new("TextButton")
+local TheStreets = Instance.new("TextButton")
+local Skywars = Instance.new("TextButton")
+local MortemMattalum = Instance.new("TextButton")
+local Mm2 = Instance.new("TextButton")
+local Utds = Instance.new("TextButton")
+local SuperheroTycoon = Instance.new("TextButton")
+local BankTycoon = Instance.new("TextButton")
+local McdonaldsTycoon = Instance.new("TextButton")
+local SkywarsGui = Instance.new("TextButton")
+local Shindo = Instance.new("TextButton")
+local MTD = Instance.new("TextButton")
+local PetTycoon = Instance.new("TextButton")
+local FortressTycoon = Instance.new("TextButton")
+local TPT = Instance.new("TextButton")
+local Bitcoin = Instance.new("TextButton")
+local PaintballBig = Instance.new("TextButton")
+local DanceHub = Instance.new("TextButton")
+local DragonBloxUltimate = Instance.new("TextButton")
+local LastPiece = Instance.new("TextButton")
+local KingPiece = Instance.new("TextButton")
+local Vr = Instance.new("TextButton")
+local Vrsupport = Instance.new("TextButton")
+local FeNeko = Instance.new("TextButton")
+local FeBuilding = Instance.new("TextButton")
+local OrHub = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+logingui.Name = "logingui"
+logingui.Parent = ScreenGui
+logingui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+logingui.BackgroundTransparency = 0.050
+logingui.BorderColor3 = Color3.fromRGB(170, 71, 169)
+logingui.BorderSizePixel = 0
+logingui.Position = UDim2.new(0.241575286, 0, 0.51733619, 0)
+logingui.Size = UDim2.new(0, 477, 0, 273)
+logingui.Active = true
+logingui.Draggable = true
+
+User.Name = "User"
+User.Parent = logingui
+User.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+User.BackgroundTransparency = 0.300
+User.BorderColor3 = Color3.fromRGB(184, 74, 182)
+User.Position = UDim2.new(0.264913887, 0, 0.126348376, 0)
+User.Size = UDim2.new(0, 200, 0, 50)
+User.Font = Enum.Font.Cartoon
+User.Text = "UserName"
+User.TextColor3 = Color3.fromRGB(140, 53, 157)
+User.TextScaled = true
+User.TextSize = 14.000
+User.TextWrapped = true
+
+Pass.Name = "Pass"
+Pass.Parent = logingui
+Pass.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Pass.BorderColor3 = Color3.fromRGB(184, 74, 182)
+Pass.Position = UDim2.new(0.264913887, 0, 0.416089416, 0)
+Pass.Size = UDim2.new(0, 200, 0, 50)
+Pass.Font = Enum.Font.Cartoon
+Pass.Text = "Password"
+Pass.TextColor3 = Color3.fromRGB(140, 53, 157)
+Pass.TextScaled = true
+Pass.TextSize = 14.000
+Pass.TextWrapped = true
+
+Submit.Name = "Submit"
+Submit.Parent = logingui
+Submit.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Submit.BorderColor3 = Color3.fromRGB(184, 74, 182)
+Submit.Position = UDim2.new(0.264065474, 0, 0.719795823, 0)
+Submit.Size = UDim2.new(0, 200, 0, 50)
+Submit.Font = Enum.Font.Gotham
+Submit.Text = "Submit"
+Submit.TextColor3 = Color3.fromRGB(145, 90, 255)
+Submit.TextScaled = true
+Submit.TextSize = 14.000
+Submit.TextWrapped = true
+Submit.MouseButton1Down:connect(function()
+if User.Text == "DeathHub" and Pass.Text == "HorizonDeath" then
+	logingui.Visible = false
+	opengui.Visible = true
+end
+end)
+
+Frame.Parent = logingui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, 9, 0, 273)
+
+UIGradient.Parent = Frame
+
+Frame_2.Parent = logingui
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.0188679248, 0, 0, 0)
+Frame_2.Size = UDim2.new(0, 468, 0, 9)
+
+UIGradient_2.Parent = Frame_2
+
+Frame_3.Parent = logingui
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.0188679248, 0, 0.963369966, 0)
+Frame_3.Size = UDim2.new(0, 468, 0, 10)
+
+UIGradient_3.Parent = Frame_3
+
+Frame_4.Parent = logingui
+Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0.98113215, 0, 0.0329670347, 0)
+Frame_4.Size = UDim2.new(0, 9, 0, 254)
+
+UIGradient_4.Parent = Frame_4
+
+opengui.Name = "opengui"
+opengui.Parent = ScreenGui
+opengui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+opengui.BackgroundTransparency = 1.000
+opengui.BorderSizePixel = 0
+opengui.Position = UDim2.new(0.0131578604, 0, 0.521683633, 0)
+opengui.Size = UDim2.new(0, 169, 0, 42)
+opengui.Visible = false
+
+Open.Name = "Open"
+Open.Parent = opengui
+Open.BackgroundColor3 = Color3.fromRGB(103, 0, 0)
+Open.Size = UDim2.new(0, 169, 0, 42)
+Open.Font = Enum.Font.Cartoon
+Open.Text = "Open DeathHub"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+Open.MouseButton1Down:connect(function()
+maingui.Visible = true
+opengui.Visible = false
+end)
+
+maingui.Name = "maingui"
+maingui.Parent = ScreenGui
+maingui.Active = true
+maingui.BackgroundColor3 = Color3.fromRGB(86, 0, 0)
+maingui.Position = UDim2.new(0.244221106, 0, 0.163265303, 0)
+maingui.Selectable = false
+maingui.Size = UDim2.new(0, 474, 0, 252)
+maingui.Visible = false
+maingui.CanvasPosition = Vector2.new(0, 750)
+maingui.Active = true
+maingui.Draggable = true
+
+Hub.Name = "Hub"
+Hub.Parent = maingui
+Hub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Hub.BackgroundTransparency = 1.000
+Hub.BorderSizePixel = 0
+Hub.Position = UDim2.new(0.127659574, 0, 0.00510204071, 0)
+Hub.Size = UDim2.new(0, 315, 0, 50)
+Hub.ZIndex = 2
+Hub.Font = Enum.Font.Bodoni
+Hub.Text = "DeathHub"
+Hub.TextColor3 = Color3.fromRGB(170, 0, 0)
+Hub.TextScaled = true
+Hub.TextSize = 14.000
+Hub.TextWrapped = true
+
+Hub_Roundify_12px.Name = "Hub_Roundify_12px"
+Hub_Roundify_12px.Parent = Hub
+Hub_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+Hub_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hub_Roundify_12px.BackgroundTransparency = 1.000
+Hub_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+Hub_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+Hub_Roundify_12px.Image = "rbxassetid://3570695787"
+Hub_Roundify_12px.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Hub_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+Hub_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+Hub_Roundify_12px.SliceScale = 0.120
+
+HatHub.Name = "HatHub"
+HatHub.Parent = maingui
+HatHub.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+HatHub.Position = UDim2.new(0.506383002, 0, 0.0548469387, 0)
+HatHub.Size = UDim2.new(0, 200, 0, 50)
+HatHub.Font = Enum.Font.SourceSans
+HatHub.Text = "HatHub"
+HatHub.TextColor3 = Color3.fromRGB(136, 0, 0)
+HatHub.TextScaled = true
+HatHub.TextSize = 14.000
+HatHub.TextWrapped = true
+HatHub.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/efdsegffdeg/fgdfgdfg/main/asdas'),true))()
+end)
+
+Commands.Name = "Commands"
+Commands.Parent = maingui
+Commands.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+Commands.Position = UDim2.new(0.0170212761, 0, 0.0548469387, 0)
+Commands.Size = UDim2.new(0, 200, 0, 50)
+Commands.Font = Enum.Font.SourceSans
+Commands.Text = "Commands"
+Commands.TextColor3 = Color3.fromRGB(136, 0, 0)
+Commands.TextScaled = true
+Commands.TextSize = 14.000
+Commands.TextWrapped = true
+Commands.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Close.Name = "Close"
+Close.Parent = maingui
+Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.797872365, 0, 0, 0)
+Close.Size = UDim2.new(0, 74, 0, 50)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(157, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+Close.MouseButton1Down:connect(function()
+	maingui.Visible = false
+	opengui.Visible = true
+end)
+
+ReplicationUI.Name = "ReplicationUI"
+ReplicationUI.Parent = maingui
+ReplicationUI.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+ReplicationUI.Position = UDim2.new(0.0170212761, 0, 0.113520399, 0)
+ReplicationUI.Size = UDim2.new(0, 200, 0, 50)
+ReplicationUI.Font = Enum.Font.SourceSans
+ReplicationUI.Text = "ReplicationUI"
+ReplicationUI.TextColor3 = Color3.fromRGB(136, 0, 0)
+ReplicationUI.TextScaled = true
+ReplicationUI.TextSize = 14.000
+ReplicationUI.TextWrapped = true
+ReplicationUI.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/rM0LU2mJ'))()
+end)
+
+HatFloat.Name = "HatFloat"
+HatFloat.Parent = maingui
+HatFloat.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+HatFloat.Position = UDim2.new(0.50436306, 0, 0.113520399, 0)
+HatFloat.Size = UDim2.new(0, 200, 0, 50)
+HatFloat.Font = Enum.Font.SourceSans
+HatFloat.Text = "HatFloat"
+HatFloat.TextColor3 = Color3.fromRGB(136, 0, 0)
+HatFloat.TextScaled = true
+HatFloat.TextSize = 14.000
+HatFloat.TextWrapped = true
+HatFloat.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/JH8MSQTC'))()
+end)
+
+TheStreets.Name = "TheStreets"
+TheStreets.Parent = maingui
+TheStreets.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+TheStreets.Position = UDim2.new(0.0128018875, 0, 0.169642851, 0)
+TheStreets.Size = UDim2.new(0, 200, 0, 50)
+TheStreets.Font = Enum.Font.SourceSans
+TheStreets.Text = "TheStreets"
+TheStreets.TextColor3 = Color3.fromRGB(136, 0, 0)
+TheStreets.TextScaled = true
+TheStreets.TextSize = 14.000
+TheStreets.TextWrapped = true
+TheStreets.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Not-Cyrus/Streets-Script/master/Streets%20Admin.lua",true))()
+end)
+
+Skywars.Name = "Skywars"
+Skywars.Parent = maingui
+Skywars.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+Skywars.Position = UDim2.new(0.50436306, 0, 0.169642851, 0)
+Skywars.Size = UDim2.new(0, 200, 0, 50)
+Skywars.Font = Enum.Font.SourceSans
+Skywars.Text = "Skywars Farm"
+Skywars.TextColor3 = Color3.fromRGB(136, 0, 0)
+Skywars.TextScaled = true
+Skywars.TextSize = 14.000
+Skywars.TextWrapped = true
+Skywars.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/efdsegffdeg/tyyrty/main/sdfdsaf", true))()
+end)
+
+MortemMattalum.Name = "MortemMattalum"
+MortemMattalum.Parent = maingui
+MortemMattalum.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+MortemMattalum.Position = UDim2.new(0.50436306, 0, 0.224489778, 0)
+MortemMattalum.Size = UDim2.new(0, 200, 0, 50)
+MortemMattalum.Font = Enum.Font.SourceSans
+MortemMattalum.Text = "Mortem Matallum"
+MortemMattalum.TextColor3 = Color3.fromRGB(136, 0, 0)
+MortemMattalum.TextScaled = true
+MortemMattalum.TextSize = 14.000
+MortemMattalum.TextWrapped = true
+MortemMattalum.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/efdsegffdeg/tyyrty/main/sdfsdfds",true))()
+end)
+
+Mm2.Name = "Mm2"
+Mm2.Parent = maingui
+Mm2.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+Mm2.Position = UDim2.new(0.014911592, 0, 0.224489778, 0)
+Mm2.Size = UDim2.new(0, 200, 0, 50)
+Mm2.Font = Enum.Font.SourceSans
+Mm2.Text = "Murder Mystery 2"
+Mm2.TextColor3 = Color3.fromRGB(136, 0, 0)
+Mm2.TextScaled = true
+Mm2.TextSize = 14.000
+Mm2.TextWrapped = true
+Mm2.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Sumithebestak/MM2/main/MM2PathWalkFarm'))()
+end)
+
+Utds.Name = "Utds"
+Utds.Parent = maingui
+Utds.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+Utds.Position = UDim2.new(0.014911592, 0, 0.274872422, 0)
+Utds.Size = UDim2.new(0, 200, 0, 50)
+Utds.Font = Enum.Font.SourceSans
+Utds.Text = "UTDS"
+Utds.TextColor3 = Color3.fromRGB(136, 0, 0)
+Utds.TextScaled = true
+Utds.TextSize = 14.000
+Utds.TextWrapped = true
+Utds.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/efdsegffdeg/tyyrty/main/sdfdfg'))()
+end)
+
+SuperheroTycoon.Name = "SuperheroTycoon"
+SuperheroTycoon.Parent = maingui
+SuperheroTycoon.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+SuperheroTycoon.Position = UDim2.new(0.50436306, 0, 0.274872422, 0)
+SuperheroTycoon.Size = UDim2.new(0, 200, 0, 50)
+SuperheroTycoon.Font = Enum.Font.SourceSans
+SuperheroTycoon.Text = "Superhero Tycoon"
+SuperheroTycoon.TextColor3 = Color3.fromRGB(136, 0, 0)
+SuperheroTycoon.TextScaled = true
+SuperheroTycoon.TextSize = 14.000
+SuperheroTycoon.TextWrapped = true
+SuperheroTycoon.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/efdsegffdeg/tyyrty/main/dsfsw'))()
+end)
+
+BankTycoon.Name = "BankTycoon"
+BankTycoon.Parent = maingui
+BankTycoon.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+BankTycoon.Position = UDim2.new(0.50436306, 0, 0.322704047, 0)
+BankTycoon.Size = UDim2.new(0, 200, 0, 50)
+BankTycoon.Font = Enum.Font.SourceSans
+BankTycoon.Text = "Bank Tycoon"
+BankTycoon.TextColor3 = Color3.fromRGB(136, 0, 0)
+BankTycoon.TextScaled = true
+BankTycoon.TextSize = 14.000
+BankTycoon.TextWrapped = true
+BankTycoon.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/efdsegffdeg/tyyrty/main/fdgh'))()
+end)
+
+McdonaldsTycoon.Name = "McdonaldsTycoon"
+McdonaldsTycoon.Parent = maingui
+McdonaldsTycoon.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+McdonaldsTycoon.Position = UDim2.new(0.014911592, 0, 0.323341787, 0)
+McdonaldsTycoon.Size = UDim2.new(0, 200, 0, 50)
+McdonaldsTycoon.Font = Enum.Font.SourceSans
+McdonaldsTycoon.Text = "Mcdonalds Tycoon"
+McdonaldsTycoon.TextColor3 = Color3.fromRGB(136, 0, 0)
+McdonaldsTycoon.TextScaled = true
+McdonaldsTycoon.TextSize = 14.000
+McdonaldsTycoon.TextWrapped = true
+McdonaldsTycoon.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/efdsegffdeg/tyyrty/main/dsgf'))()
+end)
+
+SkywarsGui.Name = "SkywarsGui"
+SkywarsGui.Parent = maingui
+SkywarsGui.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+SkywarsGui.Position = UDim2.new(0.014911592, 0, 0.371173412, 0)
+SkywarsGui.Size = UDim2.new(0, 200, 0, 50)
+SkywarsGui.Font = Enum.Font.SourceSans
+SkywarsGui.Text = "Skywars Gui"
+SkywarsGui.TextColor3 = Color3.fromRGB(136, 0, 0)
+SkywarsGui.TextScaled = true
+SkywarsGui.TextSize = 14.000
+SkywarsGui.TextWrapped = true
+SkywarsGui.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/Loadstring9VHD6Wmyi82n", true))()
+end)
+
+Shindo.Name = "Shindo"
+Shindo.Parent = maingui
+Shindo.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+Shindo.Position = UDim2.new(0.50436306, 0, 0.371173412, 0)
+Shindo.Size = UDim2.new(0, 200, 0, 50)
+Shindo.Font = Enum.Font.SourceSans
+Shindo.Text = "Shindo"
+Shindo.TextColor3 = Color3.fromRGB(136, 0, 0)
+Shindo.TextScaled = true
+Shindo.TextSize = 14.000
+Shindo.TextWrapped = true
+Shindo.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/JRL-lav/Scripts/main/shindo'))()
+end)
+
+MTD.Name = "MTD"
+MTD.Parent = maingui
+MTD.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+MTD.Position = UDim2.new(0.014911592, 0, 0.415816277, 0)
+MTD.Size = UDim2.new(0, 200, 0, 50)
+MTD.Font = Enum.Font.SourceSans
+MTD.Text = "MDT"
+MTD.TextColor3 = Color3.fromRGB(136, 0, 0)
+MTD.TextScaled = true
+MTD.TextSize = 14.000
+MTD.TextWrapped = true
+MTD.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ziroid/Ziroid/main/My%20Dragon%20Tycoon1'))()
+end)
+
+PetTycoon.Name = "PetTycoon"
+PetTycoon.Parent = maingui
+PetTycoon.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+PetTycoon.Position = UDim2.new(0.50436306, 0, 0.415816277, 0)
+PetTycoon.Size = UDim2.new(0, 200, 0, 50)
+PetTycoon.Font = Enum.Font.SourceSans
+PetTycoon.Text = "Pet Tycoon"
+PetTycoon.TextColor3 = Color3.fromRGB(136, 0, 0)
+PetTycoon.TextScaled = true
+PetTycoon.TextSize = 14.000
+PetTycoon.TextWrapped = true
+PetTycoon.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/efdsegffdeg/tyyrty/main/sdf'))()
+end)
+
+FortressTycoon.Name = "FortressTycoon"
+FortressTycoon.Parent = maingui
+FortressTycoon.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+FortressTycoon.Position = UDim2.new(0.0128018875, 0, 0.463647902, 0)
+FortressTycoon.Size = UDim2.new(0, 200, 0, 50)
+FortressTycoon.Font = Enum.Font.SourceSans
+FortressTycoon.Text = "Fortress Tycoon"
+FortressTycoon.TextColor3 = Color3.fromRGB(136, 0, 0)
+FortressTycoon.TextScaled = true
+FortressTycoon.TextSize = 14.000
+FortressTycoon.TextWrapped = true
+FortressTycoon.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/efdsegffdeg/tyyrty/main/f'))()
+end)
+
+TPT.Name = "TPT"
+TPT.Parent = maingui
+TPT.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+TPT.Position = UDim2.new(0.50436306, 0, 0.463647902, 0)
+TPT.Size = UDim2.new(0, 200, 0, 50)
+TPT.Font = Enum.Font.SourceSans
+TPT.Text = "Tropical Tycoon"
+TPT.TextColor3 = Color3.fromRGB(136, 0, 0)
+TPT.TextScaled = true
+TPT.TextSize = 14.000
+TPT.TextWrapped = true
+TPT.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://paste.ee/r/3xY1e"))()
+end)
+
+Bitcoin.Name = "Bitcoin"
+Bitcoin.Parent = maingui
+Bitcoin.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+Bitcoin.Position = UDim2.new(0.0128018875, 0, 0.510204017, 0)
+Bitcoin.Size = UDim2.new(0, 200, 0, 50)
+Bitcoin.Font = Enum.Font.SourceSans
+Bitcoin.Text = "Bitcoin Miner "
+Bitcoin.TextColor3 = Color3.fromRGB(136, 0, 0)
+Bitcoin.TextScaled = true
+Bitcoin.TextSize = 14.000
+Bitcoin.TextWrapped = true
+Bitcoin.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://hypernite.xyz/Scripts/BCMX.lua'))()
+end)
+
+PaintballBig.Name = "PaintballBig"
+PaintballBig.Parent = maingui
+PaintballBig.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+PaintballBig.Position = UDim2.new(0.50436306, 0, 0.510204017, 0)
+PaintballBig.Size = UDim2.new(0, 200, 0, 50)
+PaintballBig.Font = Enum.Font.SourceSans
+PaintballBig.Text = "Big Paintball"
+PaintballBig.TextColor3 = Color3.fromRGB(136, 0, 0)
+PaintballBig.TextScaled = true
+PaintballBig.TextSize = 14.000
+PaintballBig.TextWrapped = true
+PaintballBig.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/efdsegffdeg/tyyrty/main/sdfff'))()
+end)
+
+DanceHub.Name = "DanceHub"
+DanceHub.Parent = maingui
+DanceHub.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+DanceHub.Position = UDim2.new(0.0128018875, 0, 0.554209113, 0)
+DanceHub.Size = UDim2.new(0, 200, 0, 50)
+DanceHub.Font = Enum.Font.SourceSans
+DanceHub.Text = "DanceHub"
+DanceHub.TextColor3 = Color3.fromRGB(136, 0, 0)
+DanceHub.TextScaled = true
+DanceHub.TextSize = 14.000
+DanceHub.TextWrapped = true
+DanceHub.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://paste.ee/r/z5drj/0'))()
+end)
+
+DragonBloxUltimate.Name = "DragonBloxUltimate"
+DragonBloxUltimate.Parent = maingui
+DragonBloxUltimate.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+DragonBloxUltimate.Position = UDim2.new(0.50436306, 0, 0.553571403, 0)
+DragonBloxUltimate.Size = UDim2.new(0, 200, 0, 50)
+DragonBloxUltimate.Font = Enum.Font.SourceSans
+DragonBloxUltimate.Text = "Dbu farm"
+DragonBloxUltimate.TextColor3 = Color3.fromRGB(136, 0, 0)
+DragonBloxUltimate.TextScaled = true
+DragonBloxUltimate.TextSize = 14.000
+DragonBloxUltimate.TextWrapped = true
+DragonBloxUltimate.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/efdsegffdeg/tyyrty/main/fd'))()
+end)
+
+LastPiece.Name = "LastPiece"
+LastPiece.Parent = maingui
+LastPiece.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+LastPiece.Position = UDim2.new(0.014911592, 0, 0.600127459, 0)
+LastPiece.Size = UDim2.new(0, 200, 0, 50)
+LastPiece.Font = Enum.Font.SourceSans
+LastPiece.Text = "Last Piece"
+LastPiece.TextColor3 = Color3.fromRGB(136, 0, 0)
+LastPiece.TextScaled = true
+LastPiece.TextSize = 14.000
+LastPiece.TextWrapped = true
+LastPiece.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/BunnySalf/Hentai/main/MHEEHUB'))()
+end)
+
+KingPiece.Name = "KingPiece"
+KingPiece.Parent = maingui
+KingPiece.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+KingPiece.Position = UDim2.new(0.50436306, 0, 0.600127459, 0)
+KingPiece.Size = UDim2.new(0, 200, 0, 50)
+KingPiece.Font = Enum.Font.SourceSans
+KingPiece.Text = "KingPiece"
+KingPiece.TextColor3 = Color3.fromRGB(136, 0, 0)
+KingPiece.TextScaled = true
+KingPiece.TextSize = 14.000
+KingPiece.TextWrapped = true
+KingPiece.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/efdsegffdeg/tyyrty/main/sadfas'))()
+end)
+
+Vr.Name = "Vr"
+Vr.Parent = maingui
+Vr.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+Vr.Position = UDim2.new(0.50436306, 0, 0.643494785, 0)
+Vr.Size = UDim2.new(0, 200, 0, 50)
+Vr.Font = Enum.Font.SourceSans
+Vr.Text = "Vr"
+Vr.TextColor3 = Color3.fromRGB(136, 0, 0)
+Vr.TextScaled = true
+Vr.TextSize = 14.000
+Vr.TextWrapped = true
+Vr.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/fvujB9E8'))()
+end)
+
+Vrsupport.Name = "Vrsupport"
+Vrsupport.Parent = maingui
+Vrsupport.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+Vrsupport.Position = UDim2.new(0.014911592, 0, 0.643494785, 0)
+Vrsupport.Size = UDim2.new(0, 200, 0, 50)
+Vrsupport.Font = Enum.Font.SourceSans
+Vrsupport.Text = "VrSupporter"
+Vrsupport.TextColor3 = Color3.fromRGB(136, 0, 0)
+Vrsupport.TextScaled = true
+Vrsupport.TextSize = 14.000
+Vrsupport.TextWrapped = true
+Vrsupport.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/D43aL2Mi'))()
+end)
+
+FeNeko.Name = "FeNeko"
+FeNeko.Parent = maingui
+FeNeko.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+FeNeko.Position = UDim2.new(0.50436306, 0, 0.68877542, 0)
+FeNeko.Size = UDim2.new(0, 200, 0, 50)
+FeNeko.Font = Enum.Font.SourceSans
+FeNeko.Text = "FeNeko"
+FeNeko.TextColor3 = Color3.fromRGB(136, 0, 0)
+FeNeko.TextScaled = true
+FeNeko.TextSize = 14.000
+FeNeko.TextWrapped = true
+FeNeko.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/efdsegffdeg/tyyrty/main/fsdf'))()
+end)
+
+FeBuilding.Name = "FeBuilding"
+FeBuilding.Parent = maingui
+FeBuilding.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+FeBuilding.Position = UDim2.new(0.014911592, 0, 0.68877542, 0)
+FeBuilding.Size = UDim2.new(0, 200, 0, 50)
+FeBuilding.Font = Enum.Font.SourceSans
+FeBuilding.Text = "FeBuilding"
+FeBuilding.TextColor3 = Color3.fromRGB(136, 0, 0)
+FeBuilding.TextScaled = true
+FeBuilding.TextSize = 14.000
+FeBuilding.TextWrapped = true
+FeBuilding.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/efdsegffdeg/tyyrty/main/sad'))()
+end)
+
+OrHub.Name = "OrHub"
+OrHub.Parent = maingui
+OrHub.BackgroundColor3 = Color3.fromRGB(56, 1, 1)
+OrHub.Position = UDim2.new(0.014911592, 0, 0.734056056, 0)
+OrHub.Size = UDim2.new(0, 200, 0, 50)
+OrHub.Font = Enum.Font.SourceSans
+OrHub.Text = "OrHub"
+OrHub.TextColor3 = Color3.fromRGB(136, 0, 0)
+OrHub.TextScaled = true
+OrHub.TextSize = 14.000
+OrHub.TextWrapped = true
+OrHub.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/efdsegffdeg/tyyrty/main/dsf'))()
+end)
+
+-- Scripts:
+
+local function DBZHJH_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local button = script.Parent
+	local gradient = button.UIGradient
+	local ts = game:GetService("TweenService")
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+	local offset = {Offset = Vector2.new(1, 0)}
+	local create = ts:Create(gradient, ti, offset)
+	local startingPos = Vector2.new(-1, 0)
+	local list = {} 
+	local s, kpt = ColorSequence.new, ColorSequenceKeypoint.new
+	local counter = 0
+	local status = "down" 
+	gradient.Offset = startingPos
+	local function rainbowColors()
+		local sat, val = 255, 255 
+		for i = 1, 15 do 
+			local hue = i * 17 
+			table.insert(list, Color3.fromHSV(hue / 255, sat / 255, val / 255))
+		end
+	end
+	rainbowColors()
+	gradient.Color = s({
+		kpt(0, list[#list]),
+		kpt(0.5, list[#list - 1]),
+		kpt(1, list[#list - 2])
+	})
+	counter = #list
+	local function animate()
+		create:Play()
+		create.Completed:Wait() 
+		gradient.Offset = startingPos 
+		gradient.Rotation = 180
+		if counter == #list - 1 and status == "down" then
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[#list]), 
+				kpt(1, list[1]) 
+			})
+			counter = 1
+			status = "up" 
+		elseif counter == #list and status == "down" then 
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[1]),
+				kpt(1, list[2])
+			})
+			counter = 2
+			status = "up"
+		elseif counter <= #list - 2 and status == "down" then 
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[counter + 1]), 
+				kpt(1, list[counter + 2])
+			})
+			counter = counter + 2
+			status = "up"
+		end
+		create:Play()
+		create.Completed:Wait()
+		gradient.Offset = startingPos
+		gradient.Rotation = 0 
+		if counter == #list - 1 and status == "up" then
+			gradient.Color = s({ 
+	
+				kpt(0, list[1]), 
+				kpt(0.5, list[#list]), 
+				kpt(1, gradient.Color.Keypoints[3].Value)
+			})
+			counter = 1
+			status = "down"
+		elseif counter == #list and status == "up" then
+			gradient.Color = s({
+				kpt(0, list[2]),
+				kpt(0.5, list[1]), 
+				kpt(1, gradient.Color.Keypoints[3].Value)
+			})
+			counter = 2
+			status = "down"
+		elseif counter <= #list - 2 and status == "up" then
+			gradient.Color = s({
+				kpt(0, list[counter + 2]), 
+				kpt(0.5, list[counter + 1]), 
+				kpt(1, gradient.Color.Keypoints[3].Value) 	
+			})
+			counter = counter + 2
+			status = "down"
+		end
+		animate()
+	end
+	animate()
+end
+coroutine.wrap(DBZHJH_fake_script)()
+local function IMOQ_fake_script() -- Frame_2.LocalScript 
+	local script = Instance.new('LocalScript', Frame_2)
+
+	local button = script.Parent
+	local gradient = button.UIGradient
+	local ts = game:GetService("TweenService")
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+	local offset = {Offset = Vector2.new(1, 0)}
+	local create = ts:Create(gradient, ti, offset)
+	local startingPos = Vector2.new(-1, 0)
+	local list = {} 
+	local s, kpt = ColorSequence.new, ColorSequenceKeypoint.new
+	local counter = 0
+	local status = "down" 
+	gradient.Offset = startingPos
+	local function rainbowColors()
+		local sat, val = 255, 255 
+		for i = 1, 15 do 
+			local hue = i * 17 
+			table.insert(list, Color3.fromHSV(hue / 255, sat / 255, val / 255))
+		end
+	end
+	rainbowColors()
+	gradient.Color = s({
+		kpt(0, list[#list]),
+		kpt(0.5, list[#list - 1]),
+		kpt(1, list[#list - 2])
+	})
+	counter = #list
+	local function animate()
+		create:Play()
+		create.Completed:Wait() 
+		gradient.Offset = startingPos 
+		gradient.Rotation = 180
+		if counter == #list - 1 and status == "down" then
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[#list]), 
+				kpt(1, list[1]) 
+			})
+			counter = 1
+			status = "up" 
+		elseif counter == #list and status == "down" then 
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[1]),
+				kpt(1, list[2])
+			})
+			counter = 2
+			status = "up"
+		elseif counter <= #list - 2 and status == "down" then 
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[counter + 1]), 
+				kpt(1, list[counter + 2])
+			})
+			counter = counter + 2
+			status = "up"
+		end
+		create:Play()
+		create.Completed:Wait()
+		gradient.Offset = startingPos
+		gradient.Rotation = 0 
+		if counter == #list - 1 and status == "up" then
+			gradient.Color = s({ 
+	
+				kpt(0, list[1]), 
+				kpt(0.5, list[#list]), 
+				kpt(1, gradient.Color.Keypoints[3].Value)
+			})
+			counter = 1
+			status = "down"
+		elseif counter == #list and status == "up" then
+			gradient.Color = s({
+				kpt(0, list[2]),
+				kpt(0.5, list[1]), 
+				kpt(1, gradient.Color.Keypoints[3].Value)
+			})
+			counter = 2
+			status = "down"
+		elseif counter <= #list - 2 and status == "up" then
+			gradient.Color = s({
+				kpt(0, list[counter + 2]), 
+				kpt(0.5, list[counter + 1]), 
+				kpt(1, gradient.Color.Keypoints[3].Value) 	
+			})
+			counter = counter + 2
+			status = "down"
+		end
+		animate()
+	end
+	animate()
+end
+coroutine.wrap(IMOQ_fake_script)()
+local function CQOBIK_fake_script() -- Frame_3.LocalScript 
+	local script = Instance.new('LocalScript', Frame_3)
+
+	local button = script.Parent
+	local gradient = button.UIGradient
+	local ts = game:GetService("TweenService")
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+	local offset = {Offset = Vector2.new(1, 0)}
+	local create = ts:Create(gradient, ti, offset)
+	local startingPos = Vector2.new(-1, 0)
+	local list = {} 
+	local s, kpt = ColorSequence.new, ColorSequenceKeypoint.new
+	local counter = 0
+	local status = "down" 
+	gradient.Offset = startingPos
+	local function rainbowColors()
+		local sat, val = 255, 255 
+		for i = 1, 15 do 
+			local hue = i * 17 
+			table.insert(list, Color3.fromHSV(hue / 255, sat / 255, val / 255))
+		end
+	end
+	rainbowColors()
+	gradient.Color = s({
+		kpt(0, list[#list]),
+		kpt(0.5, list[#list - 1]),
+		kpt(1, list[#list - 2])
+	})
+	counter = #list
+	local function animate()
+		create:Play()
+		create.Completed:Wait() 
+		gradient.Offset = startingPos 
+		gradient.Rotation = 180
+		if counter == #list - 1 and status == "down" then
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[#list]), 
+				kpt(1, list[1]) 
+			})
+			counter = 1
+			status = "up" 
+		elseif counter == #list and status == "down" then 
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[1]),
+				kpt(1, list[2])
+			})
+			counter = 2
+			status = "up"
+		elseif counter <= #list - 2 and status == "down" then 
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[counter + 1]), 
+				kpt(1, list[counter + 2])
+			})
+			counter = counter + 2
+			status = "up"
+		end
+		create:Play()
+		create.Completed:Wait()
+		gradient.Offset = startingPos
+		gradient.Rotation = 0 
+		if counter == #list - 1 and status == "up" then
+			gradient.Color = s({ 
+	
+				kpt(0, list[1]), 
+				kpt(0.5, list[#list]), 
+				kpt(1, gradient.Color.Keypoints[3].Value)
+			})
+			counter = 1
+			status = "down"
+		elseif counter == #list and status == "up" then
+			gradient.Color = s({
+				kpt(0, list[2]),
+				kpt(0.5, list[1]), 
+				kpt(1, gradient.Color.Keypoints[3].Value)
+			})
+			counter = 2
+			status = "down"
+		elseif counter <= #list - 2 and status == "up" then
+			gradient.Color = s({
+				kpt(0, list[counter + 2]), 
+				kpt(0.5, list[counter + 1]), 
+				kpt(1, gradient.Color.Keypoints[3].Value) 	
+			})
+			counter = counter + 2
+			status = "down"
+		end
+		animate()
+	end
+	animate()
+end
+coroutine.wrap(CQOBIK_fake_script)()
+local function HRGP_fake_script() -- Frame_4.LocalScript 
+	local script = Instance.new('LocalScript', Frame_4)
+
+	local button = script.Parent
+	local gradient = button.UIGradient
+	local ts = game:GetService("TweenService")
+	local ti = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+	local offset = {Offset = Vector2.new(1, 0)}
+	local create = ts:Create(gradient, ti, offset)
+	local startingPos = Vector2.new(-1, 0)
+	local list = {} 
+	local s, kpt = ColorSequence.new, ColorSequenceKeypoint.new
+	local counter = 0
+	local status = "down" 
+	gradient.Offset = startingPos
+	local function rainbowColors()
+		local sat, val = 255, 255 
+		for i = 1, 15 do 
+			local hue = i * 17 
+			table.insert(list, Color3.fromHSV(hue / 255, sat / 255, val / 255))
+		end
+	end
+	rainbowColors()
+	gradient.Color = s({
+		kpt(0, list[#list]),
+		kpt(0.5, list[#list - 1]),
+		kpt(1, list[#list - 2])
+	})
+	counter = #list
+	local function animate()
+		create:Play()
+		create.Completed:Wait() 
+		gradient.Offset = startingPos 
+		gradient.Rotation = 180
+		if counter == #list - 1 and status == "down" then
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[#list]), 
+				kpt(1, list[1]) 
+			})
+			counter = 1
+			status = "up" 
+		elseif counter == #list and status == "down" then 
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[1]),
+				kpt(1, list[2])
+			})
+			counter = 2
+			status = "up"
+		elseif counter <= #list - 2 and status == "down" then 
+			gradient.Color = s({
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[counter + 1]), 
+				kpt(1, list[counter + 2])
+			})
+			counter = counter + 2
+			status = "up"
+		end
+		create:Play()
+		create.Completed:Wait()
+		gradient.Offset = startingPos
+		gradient.Rotation = 0 
+		if counter == #list - 1 and status == "up" then
+			gradient.Color = s({ 
+	
+				kpt(0, list[1]), 
+				kpt(0.5, list[#list]), 
+				kpt(1, gradient.Color.Keypoints[3].Value)
+			})
+			counter = 1
+			status = "down"
+		elseif counter == #list and status == "up" then
+			gradient.Color = s({
+				kpt(0, list[2]),
+				kpt(0.5, list[1]), 
+				kpt(1, gradient.Color.Keypoints[3].Value)
+			})
+			counter = 2
+			status = "down"
+		elseif counter <= #list - 2 and status == "up" then
+			gradient.Color = s({
+				kpt(0, list[counter + 2]), 
+				kpt(0.5, list[counter + 1]), 
+				kpt(1, gradient.Color.Keypoints[3].Value) 	
+			})
+			counter = counter + 2
+			status = "down"
+		end
+		animate()
+	end
+	animate()
+end
+coroutine.wrap(HRGP_fake_script)()
