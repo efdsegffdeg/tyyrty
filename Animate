@@ -1,0 +1,1 @@
+loadstring(game:HttpGet('https://projectanimatescript.weebly.com/uploads/4/2/3/6/42367003/output.lua'))()
